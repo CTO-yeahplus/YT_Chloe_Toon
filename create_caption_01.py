@@ -2,14 +2,14 @@ timing = []
 caption = []
 cap_dict = {}
 
-f = open("/Users/eugeneko/Documents/dev/YT_Chloe_caption/captions_timing.txt", 'r')
+f = open("/Users/eugeneko/Documents/dev/YT_Chloe_Toon/captions_timing.txt", 'r')
 lines = f.readlines()
 for line in lines:
     timing.append(line)
     print(line)
 f.close()
 
-f = open("/Users/eugeneko/Documents/dev/YT_Chloe_caption/cap_new.txt", 'r')
+f = open("/Users/eugeneko/Documents/dev/YT_Chloe_Toon/cap_new.txt", 'r')
 cap_lines = f.readlines()
 for line in cap_lines:
     caption.append(line.strip())
@@ -28,7 +28,7 @@ for i,item in enumerate(timing):
     except:
         pass
 
-f=open("/Users/eugeneko/Documents/dev/YT_Chloe_caption/cap_done.txt", 'w')
+f=open("/Users/eugeneko/Documents/dev/YT_Chloe_Toon/cap_done.txt", 'w')
 
 for k in cap_dict.keys():
     f.write(k)

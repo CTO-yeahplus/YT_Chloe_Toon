@@ -2,14 +2,14 @@ timing = []
 caption = []
 cap_dict = {}
 
-f = open("/Users/eugeneko/Documents/dev/YT_Chloe_caption/TOON_cap/TOON_timing.sbv", 'r')
+f = open("/Users/eugeneko/Documents/dev/YT_Chloe_Toon/TOON_cap/TOON_timing.sbv", 'r')
 lines = f.readlines()
 for line in lines:
     timing.append(line.strip())
     #print(line)
 f.close()
 
-f = open("/Users/eugeneko/Documents/dev/YT_Chloe_caption/TOON_cap/TOON_cap_new.txt", 'r')
+f = open("/Users/eugeneko/Documents/dev/YT_Chloe_Toon/TOON_cap/TOON_cap_new.txt", 'r')
 cap_lines = f.readlines()
 for line in cap_lines:
     if line:
@@ -24,7 +24,7 @@ for i,item in enumerate(timing):
     if item:
         cap_dict[item]=caption[i]
 
-f=open("/Users/eugeneko/Documents/dev/YT_Chloe_caption/TOON_cap/TOON_cap_done.txt", 'w')
+f=open("/Users/eugeneko/Documents/dev/YT_Chloe_Toon/TOON_cap/TOON_cap_done.txt", 'w')
 
 print(cap_dict)
 for k in cap_dict.keys():
